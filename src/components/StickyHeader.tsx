@@ -27,9 +27,9 @@ function getClosestCity(lat: number, lng: number): string {
     }
   }
 
-  // If user is very far from all cities (> ~100km), show "Fresno"
+  // If user is very far from all cities (> ~100km), show "California"
   if (minDist > 1.0) {
-    return "Fresno";
+    return "California";
   }
 
   return closest;
@@ -38,7 +38,7 @@ function getClosestCity(lat: number, lng: number): string {
 export function StickyHeader() {
   const sentinelRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [city, setCity] = useState("Fresno");
+  const [city, setCity] = useState("California");
   const { openCallDialog } = useCallDialog();
 
   // Geolocation - detect nearest city
