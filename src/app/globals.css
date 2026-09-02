@@ -1,0 +1,177 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 600ms var(--easing), transform 600ms var(--easing);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Availability badge pulse */
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.4);
+  }
+}
+
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Warning icon pulse - for problem/alert sections */
+@keyframes warning-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.08);
+  }
+}
+
+.warning-pulse {
+  animation: warning-pulse 1.5s ease-in-out infinite;
+}
+
+/* Red band typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-cursor {
+  0%, 100% { border-color: var(--color-on-primary); }
+  50% { border-color: transparent; }
+}
+
+.typing-container {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 2px solid transparent;
+}
+
+.typing-container.typing-active {
+  animation:
+    typing 1.2s steps(30, end) forwards,
+    blink-cursor 0.75s step-end 3;
+  border-right-color: var(--color-on-primary);
+}
+
+.typing-container.typing-done {
+  width: 100%;
+  border-right-color: transparent;
+}
+
+/* MDX prose styles */
+.prose-eagle h1,
+.prose-eagle h2,
+.prose-eagle h3,
+.prose-eagle h4 {
+  font-family: var(--font-heading);
+  font-weight: var(--heading-weight);
+  letter-spacing: var(--heading-tracking);
+  color: var(--color-text);
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+.prose-eagle h1 { font-size: var(--text-4xl); }
+.prose-eagle h2 { font-size: var(--text-3xl); }
+.prose-eagle h3 { font-size: var(--text-2xl); }
+.prose-eagle h4 { font-size: var(--text-xl); }
+.prose-eagle p {
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25em;
+}
+.prose-eagle a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+.prose-eagle ul, .prose-eagle ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.25em;
+  color: var(--color-text-muted);
+}
+.prose-eagle li { margin-bottom: 0.5em; }
+.prose-eagle blockquote {
+  border-left: 3px solid var(--color-primary);
+  padding-left: 1em;
+  margin: 1.5em 0;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+.prose-eagle table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: var(--text-sm);
+}
+.prose-eagle th, .prose-eagle td {
+  padding: 0.75em 1em;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+.prose-eagle th {
+  font-weight: 600;
+  color: var(--color-text);
+}
+.prose-eagle hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2em 0;
+}
+.prose-eagle code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  padding: 0.15em 0.4em;
+  background: var(--color-surface);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .pulse-dot {
+    animation: none;
+  }
+
+  .warning-pulse {
+    animation: none;
+  }
+
+  .typing-container,
+  .typing-container.typing-active {
+    width: 100%;
+    animation: none;
+    border-right-color: transparent;
+  }
+
+  * {
+    transition-duration: 0ms !important;
+  }
+}
