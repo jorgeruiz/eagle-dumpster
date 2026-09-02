@@ -10,6 +10,7 @@ const cities = [
   "Madera",
   "Coarsegold",
   "Friant",
+  "Selma",
 ];
 
 export function Areas() {

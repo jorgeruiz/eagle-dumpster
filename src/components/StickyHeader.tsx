@@ -10,6 +10,7 @@ const CITIES = [
   { name: "Madera", lat: 36.9613, lng: -120.0607 },
   { name: "Coarsegold", lat: 37.2621, lng: -119.6984 },
   { name: "Friant", lat: 36.9877, lng: -119.7226 },
+  { name: "Selma", lat: 36.5708, lng: -119.6121 },
 ];
 
 function getClosestCity(lat: number, lng: number): string {

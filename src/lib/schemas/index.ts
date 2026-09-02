@@ -3,7 +3,7 @@ export const businessSchema = {
   "@type": "ProfessionalService",
   name: "Eagle Dumpster",
   description:
-    "Waste management, junk removal, appliance hauling, construction debris cleanup, and property clean-up services serving Fresno, Clovis, Madera, Coarsegold, Friant, and surrounding areas in California.",
+    "Waste management, junk removal, appliance hauling, construction debris cleanup, and property clean-up services serving Fresno, Clovis, Madera, Selma, Coarsegold, Friant, and surrounding areas in California.",
   url: "https://eagledumpsterca.com/",
   telephone: "+15596134115",
   address: {
@@ -18,6 +18,7 @@ export const businessSchema = {
     { "@type": "City", name: "Madera", sameAs: "https://www.wikidata.org/wiki/Q980985" },
     { "@type": "City", name: "Coarsegold", sameAs: "https://www.wikidata.org/wiki/Q2669038" },
     { "@type": "City", name: "Friant" },
+    { "@type": "City", name: "Selma" },
   ],
   priceRange: "$$",
   slogan: "Fast. Reliable. Honest.",
@@ -71,7 +72,7 @@ export const faqPageSchema = {
       name: "Do you serve areas outside Fresno?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Eagle Dumpster covers Fresno, Clovis, Madera, Coarsegold, Friant, and surrounding communities in the Central Valley. Call (559) 613-4115 to confirm service availability at your address.",
+        text: "Yes. Eagle Dumpster covers Fresno, Clovis, Madera, Selma, Coarsegold, Friant, and surrounding communities in the Central Valley. Call (559) 613-4115 to confirm service availability at your address.",
       },
     },
   ],

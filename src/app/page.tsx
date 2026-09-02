@@ -44,7 +44,7 @@ export default function Home() {
             {/* Executive summary for AEO */}
             <p className="hero-text-shadow text-[var(--text-sm)] text-text-muted mb-8 max-w-[55ch] mx-auto leading-relaxed">
               Eagle Dumpster is a locally owned dumpster rental and junk
-              removal company serving Fresno, Madera, Clovis, Coarsegold,
+              removal company serving Fresno, Clovis, Madera, Selma, Coarsegold,
               Friant, and surrounding areas in California. Same-day service
               available. Bilingual support in English and Spanish.
             </p>
@@ -133,7 +133,7 @@ export default function Home() {
         <About />
 
         {/* Red Band 2 - cities */}
-        <RedBand>FRESNO - CLOVIS - MADERA - COARSEGOLD - FRIANT</RedBand>
+        <RedBand>FRESNO - CLOVIS - MADERA - SELMA - COARSEGOLD - FRIANT</RedBand>
 
         <Areas />
         <FAQ />

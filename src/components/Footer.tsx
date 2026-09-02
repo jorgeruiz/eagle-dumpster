@@ -38,7 +38,7 @@ export function Footer() {
             </div>
             <p className="mt-4 text-[var(--text-sm)] text-text-muted leading-relaxed max-w-[30ch]">
               Dumpster rental and junk removal services in Fresno, Clovis,
-              Madera, Coarsegold, and Friant, California.
+              Madera, Selma, Coarsegold, and Friant, California.
             </p>
             <CallButton
               className="inline-block mt-4 text-[var(--text-base)] font-medium text-primary cursor-pointer"
@@ -130,7 +130,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-[var(--text-xs)] text-text-muted leading-relaxed">
             Eagle Dumpster - Dumpster Rental, Junk Removal, and Waste Management
-            Services in Fresno, Clovis, Madera, Coarsegold, and Friant,
+            Services in Fresno, Clovis, Madera, Selma, Coarsegold, and Friant,
             California. Fast. Reliable. Honest. Call{" "}
             <CallButton className="text-text underline cursor-pointer">
               (559) 613-4115

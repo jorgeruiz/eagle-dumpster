@@ -123,6 +123,7 @@ const schema = {
     { "@type": "City", name: "Madera" },
     { "@type": "City", name: "Coarsegold" },
     { "@type": "City", name: "Friant" },
+    { "@type": "City", name: "Selma" },
   ],
   description:
     "Roll-off dumpster rental for residential and commercial projects in Fresno and surrounding areas. Same-day delivery available.",

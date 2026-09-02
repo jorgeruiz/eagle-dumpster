@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "Do you serve areas outside Fresno?",
     answer:
-      "Yes. We cover Fresno, Clovis, Madera, Coarsegold, Friant, and surrounding communities in the Central Valley. Call (559) 613-4115 to confirm service availability at your address.",
+      "Yes. We cover Fresno, Clovis, Madera, Selma, Coarsegold, Friant, and surrounding communities in the Central Valley. Call (559) 613-4115 to confirm service availability at your address.",
   },
 ];
 

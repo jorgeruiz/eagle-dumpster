@@ -79,7 +79,7 @@ export function MicrositeLayout({
       <footer className="py-10 px-[var(--gutter)] border-t border-border">
         <div className="mx-auto max-w-[var(--content-width)] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[var(--text-xs)] text-text-muted">
-            Eagle Dumpster - Fresno, Clovis, Madera, Coarsegold, Friant, CA.
+            Eagle Dumpster - Fresno, Clovis, Madera, Selma, Coarsegold, Friant, CA.
             Call{" "}
             <a href="tel:+15596134115" className="text-text">
               (559) 613-4115

@@ -122,6 +122,7 @@ const schema = {
     { "@type": "City", name: "Madera" },
     { "@type": "City", name: "Coarsegold" },
     { "@type": "City", name: "Friant" },
+    { "@type": "City", name: "Selma" },
   ],
   description:
     "Full-service junk removal for homes and properties in Fresno and surrounding areas. We load and haul everything. Same-day service available.",
