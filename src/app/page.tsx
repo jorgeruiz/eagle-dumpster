@@ -36,14 +36,13 @@ export default function Home() {
               sizes="100vw"
               aria-hidden="true"
             />
-            {/* Dark overlay - heavy to keep text legible */}
-            <div className="absolute inset-0 bg-bg/85" />
+            <div className="absolute inset-0 bg-bg/65" />
           </div>
 
           {/* Content over image */}
           <div className="relative">
             {/* Executive summary for AEO */}
-            <p className="text-[var(--text-sm)] text-text-muted mb-8 max-w-[55ch] mx-auto leading-relaxed">
+            <p className="hero-text-shadow text-[var(--text-sm)] text-text-muted mb-8 max-w-[55ch] mx-auto leading-relaxed">
               Eagle Dumpster is a locally owned dumpster rental and junk
               removal company serving Fresno, Madera, Clovis, Coarsegold,
               Friant, and surrounding areas in California. Same-day service
@@ -51,7 +50,7 @@ export default function Home() {
             </p>
 
             {/* Headline - massive Oswald */}
-            <h1 className="flex flex-col gap-1">
+            <h1 className="hero-text-shadow flex flex-col gap-1">
               <span
                 className="text-[var(--text-4xl)] md:text-[5rem] lg:text-[6.5rem] leading-[0.95] uppercase text-text"
                 style={{
@@ -75,7 +74,7 @@ export default function Home() {
             </h1>
 
             {/* Subtext */}
-            <p className="mt-6 text-[var(--text-lg)] text-text-muted max-w-[45ch] mx-auto leading-relaxed">
+            <p className="hero-text-shadow mt-6 text-[var(--text-lg)] text-text-muted max-w-[45ch] mx-auto leading-relaxed">
               Fast, reliable service in Fresno, CA. We pick up your mess so
               you don&apos;t have to.
             </p>

@@ -150,7 +150,7 @@ export default function BulkMaterialDeliveryPage() {
         <section className="relative min-h-[90dvh] flex flex-col items-center justify-center px-[var(--gutter)] py-20 text-center">
           <div className="absolute inset-0">
             <Image
-              src="/images/service-property-cleanup.webp"
+              src="/images/landing-dumpster-hero.webp"
               alt=""
               fill
               priority
@@ -158,18 +158,18 @@ export default function BulkMaterialDeliveryPage() {
               sizes="100vw"
               aria-hidden="true"
             />
-            <div className="absolute inset-0 bg-bg/80" />
+            <div className="absolute inset-0 bg-bg/65" />
           </div>
 
           <div className="relative">
             <p
-              className="text-[var(--text-sm)] text-primary uppercase tracking-[0.15em] font-bold mb-6"
+              className="hero-text-shadow text-[var(--text-sm)] text-primary uppercase tracking-[0.15em] font-bold mb-6"
               style={{ fontFamily: "var(--font-mono)" }}
             >
               Gravel - Dirt - Rock - Sand
             </p>
 
-            <h1 className="flex flex-col gap-1">
+            <h1 className="hero-text-shadow flex flex-col gap-1">
               <span
                 className="text-[3rem] md:text-[4.5rem] lg:text-[6rem] leading-[0.95] uppercase text-text"
                 style={{
@@ -192,7 +192,7 @@ export default function BulkMaterialDeliveryPage() {
               </span>
             </h1>
 
-            <p className="mt-6 text-[var(--text-lg)] text-text-muted max-w-[45ch] mx-auto leading-relaxed">
+            <p className="hero-text-shadow mt-6 text-[var(--text-lg)] text-text-muted max-w-[45ch] mx-auto leading-relaxed">
               Tons of material delivered to your property. Not bags from the
               hardware store - real bulk loads for real projects.
             </p>
@@ -299,7 +299,7 @@ export default function BulkMaterialDeliveryPage() {
           <div className="absolute inset-0 overflow-hidden">
             <div className="sticky top-0 h-[100dvh]">
               <Image
-                src="/images/landing-dumpster-hero.webp"
+                src="/images/cta-dumpster-closeup.webp"
                 alt=""
                 fill
                 className="object-cover"
@@ -365,7 +365,13 @@ export default function BulkMaterialDeliveryPage() {
             <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
               <ScrollReveal delay={0}>
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-on-primary mx-auto">
+                  <div
+                    className="inline-flex items-center justify-center w-16 h-16 rounded-full mx-auto border border-[#52525B]"
+                    style={{
+                      background: "linear-gradient(145deg, #71717A 0%, #A1A1AA 25%, #D4D4D8 50%, #A1A1AA 75%, #52525B 100%)",
+                      color: "#18181B",
+                    }}
+                  >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7">
                       <path d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004ZM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 0 1-.921.42Z" />
                       <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v.816a3.836 3.836 0 0 0-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 0 1-.921-.421l-.879-.66a.75.75 0 0 0-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 0 0 1.5 0v-.81a4.124 4.124 0 0 0 1.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 0 0-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 0 0 .933-1.175l-.415-.33a3.836 3.836 0 0 0-1.719-.755V6Z" clipRule="evenodd" />
@@ -383,7 +389,13 @@ export default function BulkMaterialDeliveryPage() {
 
               <ScrollReveal delay={120}>
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-on-primary mx-auto">
+                  <div
+                    className="inline-flex items-center justify-center w-16 h-16 rounded-full mx-auto border border-[#52525B]"
+                    style={{
+                      background: "linear-gradient(145deg, #71717A 0%, #A1A1AA 25%, #D4D4D8 50%, #A1A1AA 75%, #52525B 100%)",
+                      color: "#18181B",
+                    }}
+                  >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7">
                       <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clipRule="evenodd" />
                     </svg>
@@ -400,7 +412,13 @@ export default function BulkMaterialDeliveryPage() {
 
               <ScrollReveal delay={240}>
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-on-primary mx-auto">
+                  <div
+                    className="inline-flex items-center justify-center w-16 h-16 rounded-full mx-auto border border-[#52525B]"
+                    style={{
+                      background: "linear-gradient(145deg, #71717A 0%, #A1A1AA 25%, #D4D4D8 50%, #A1A1AA 75%, #52525B 100%)",
+                      color: "#18181B",
+                    }}
+                  >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7">
                       <path fillRule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clipRule="evenodd" />
                     </svg>
