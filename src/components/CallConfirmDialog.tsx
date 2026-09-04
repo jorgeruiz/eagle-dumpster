@@ -24,9 +24,20 @@ export function CallConfirmProvider({ children }: { children: React.ReactNode })
     setIsOpen(true);
   }, []);
 
-  const handleConfirm = () => {
+  const handleCall = () => {
     setIsOpen(false);
+    if (typeof window !== "undefined" && window.dataLayer) {
+      window.dataLayer.push({ event: "call_click", phone_number: PHONE_NUMBER });
+    }
     window.location.href = `tel:${PHONE_NUMBER}`;
+  };
+
+  const handleMessage = () => {
+    setIsOpen(false);
+    if (typeof window !== "undefined" && window.dataLayer) {
+      window.dataLayer.push({ event: "sms_click", phone_number: PHONE_NUMBER });
+    }
+    window.location.href = `sms:${PHONE_NUMBER}`;
   };
 
   const handleClose = () => {
@@ -94,7 +105,7 @@ export function CallConfirmProvider({ children }: { children: React.ReactNode })
             {/* Buttons */}
             <div className="mt-8 flex flex-col gap-3">
               <button
-                onClick={handleConfirm}
+                onClick={handleCall}
                 className="w-full bg-primary text-on-primary py-4 font-medium text-[var(--text-base)] uppercase tracking-[0.08em] hover:opacity-90 active:scale-[0.98] transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 style={{
                   fontFamily: "var(--font-heading)",
@@ -106,8 +117,20 @@ export function CallConfirmProvider({ children }: { children: React.ReactNode })
                 Call Now
               </button>
               <button
+                onClick={handleMessage}
+                className="w-full border-2 border-primary text-primary py-3.5 font-medium text-[var(--text-sm)] uppercase tracking-[0.08em] hover:bg-primary hover:text-on-primary transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                style={{
+                  fontFamily: "var(--font-heading)",
+                  fontWeight: 600,
+                  transitionDuration: "var(--duration-max)",
+                  transitionTimingFunction: "var(--easing)",
+                }}
+              >
+                Or Send a Message
+              </button>
+              <button
                 onClick={handleClose}
-                className="w-full border border-border text-text-muted py-3 text-[var(--text-sm)] hover:border-primary hover:text-text transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="w-full text-text-muted py-2 text-[var(--text-sm)] hover:text-text transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 style={{
                   transitionDuration: "var(--duration-max)",
                   transitionTimingFunction: "var(--easing)",
