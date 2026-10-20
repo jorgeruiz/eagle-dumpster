@@ -9,15 +9,19 @@ const serviceLinks = [
   { label: "Property Clean-Ups", href: "/property-cleanups" },
   { label: "Construction Debris", href: "/construction-debris-cleanup" },
   { label: "Appliance Removal", href: "/appliance-removal" },
+  { label: "Furniture Disposal", href: "/furniture-disposal" },
+  { label: "Bulk Material Delivery", href: "/bulk-material-delivery" },
   { label: "Bobcat Services", href: "/bobcat-services" },
   { label: "Recycling Services", href: "/recycling-services" },
+  { label: "Gutter Clean-Ups", href: "/gutter-cleanups" },
+  { label: "Gardening", href: "/gardening-maintenance" },
 ];
 
 const companyLinks = [
-  { label: "About", href: "#about" },
-  { label: "Areas We Serve", href: "#areas" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "tel:+15596134115" },
+  { label: "About", href: "/about" },
+  { label: "Areas We Serve", href: "/service-areas" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Footer() {

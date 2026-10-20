@@ -3,6 +3,27 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://www.eagledumpsterca.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const services = [
+    "dumpster-rental",
+    "junk-removal",
+    "bulk-material-delivery",
+    "property-cleanups",
+    "construction-debris-cleanup",
+    "appliance-removal",
+    "furniture-disposal",
+    "bobcat-services",
+    "recycling-services",
+    "gutter-cleanups",
+    "gardening-maintenance",
+  ];
+
+  const pages = [
+    "about",
+    "contact",
+    "faq",
+    "service-areas",
+  ];
+
   return [
     {
       url: BASE_URL,
@@ -10,23 +31,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
-    {
-      url: `${BASE_URL}/dumpster-rental`,
+    ...services.map((slug) => ({
+      url: `${BASE_URL}/${slug}`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/junk-removal`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...pages.map((slug) => ({
+      url: `${BASE_URL}/${slug}`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/bulk-material-delivery`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
   ];
 }

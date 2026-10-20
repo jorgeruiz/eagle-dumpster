@@ -4,11 +4,11 @@ import { useState } from "react";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Areas", href: "#areas" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "tel:+15596134115" },
+  { label: "Services", href: "/#services" },
+  { label: "About", href: "/about" },
+  { label: "Areas", href: "/service-areas" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Navbar() {
